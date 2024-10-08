@@ -12,7 +12,7 @@ title                    : "Elise Özalp"
 title_separator          : "-"
 name                     : &name "Elise Özalp"
 description              : &description "Applied Mathematician"
-url                      : https://eliseoe.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://eliseoe.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "eliseoe/eliseoe.github.io/"
 
@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Elise Özalp"
-  pronouns         : "she/her"  
+  pronouns         : "she/her"
   bio              : "PhD Student at Imperial College London \nAmelia Earhart Fellow "
   location         : "London, UK"
   employer         : "Imperial College London"
