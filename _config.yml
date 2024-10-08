@@ -12,8 +12,8 @@ title                    : "Elise Özalp"
 title_separator          : "-"
 name                     : &name "Elise Özalp"
 description              : &description "Applied Mathematician"
-url                      : https://eliseoezalp.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+url                      : "https://eliseoezalp.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/home" # the subpath of your site, e.g. "/blog"
 repository               : "eliseoe/eliseoezalp.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
