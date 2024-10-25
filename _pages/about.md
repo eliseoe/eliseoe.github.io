@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a final-year PhD student at the Departent of Aeronautics at Imperial College London.
+I am a final-year PhD student at the Department of Aeronautics at Imperial College London. 
 
 I specialize in time series forecasting, machine learning, and nonlinear dynamics. My work primarily focuses on data-driven reduced-order modeling for chaotic partial differential equations, with recent projects leveraging convolutional autoencoders and echo state networks to analyze stability in high-dimensional systems like the Kuramoto-Sivashinsky equation and the Kolmogorov flow. 
 
