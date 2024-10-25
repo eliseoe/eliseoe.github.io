@@ -16,6 +16,11 @@ Education
 * B.S. in Mathematics with Computer Science, Technische Universität Darmstadt, 2020
 * B.S. Exchange in Mathematics & Computer Science, Hong Kong University of Science and Technology, 2018/2019
 
+Work experience
+======
+* Research Scientist Intern, Research & Development Simulia - Dassault Systèmes, Nov 2020 - Nov 2021
+* Technology Intern, Chief Operating Office - Deutsche Bank, Jul 2019 - Sep 2019
+* Teaching Assistant, Department of Mathematics - Technische Universität Darmstadt, 2017 - 2020
 
 
 <!-- Work experience
