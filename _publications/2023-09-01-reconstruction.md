@@ -1,5 +1,5 @@
 ---
-title: "Reconstruction, Forecasting, and Stability of Chaotic Dynamics from Partial Data"
+title: "Reconstruction, forecasting, and stability of chaotic dynamics from partial data"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
