@@ -26,8 +26,8 @@ tags:
 
 1. Preheat the oven to 180˚C (fan) and prepare a ~22cm loaf tin.
 2. In a bowl, mix the bananas until smooth. Keep bits if you prefer. Add in the melted butter and stir.
-3. Add the sugar, egg, vanilla, baking soda, salt, and flour, and stir until the batter is smooth.
-4. Add in 85g of chocolate chips and pour the batter into a greased loaf pan. Top with additional chocolate chips.
+3. Add the sugar, egg, vanilla, baking soda, salt, and flour, and stir until the batter is smooth. *Do not overmix.*
+4. Add in 85g of chocolate chips and pour the batter into a greased loaf tin. Top with additional chocolate chips.
 5. Bake for 50 minutes to an hour, or until a toothpick comes out clean.
 
 ## Equipment
