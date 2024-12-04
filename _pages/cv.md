@@ -11,10 +11,10 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Time series forecast of chaotic and turbulent dynamics, Imperial College London, 2025 (expected)
-* M.Sc. in Computational Mathematics, Technische Universität Darmstadt, 2021
-* B.Sc. in Mathematics with Computer Science, Technische Universität Darmstadt, 2020
-* B.Sc. Exchange in Mathematics & Computer Science, Hong Kong University of Science and Technology, 2018/2019
+* PhD in Time series forecast of chaotic and turbulent dynamics, Imperial College London, 2025 (expected)
+* MSc in Computational Mathematics, Technische Universität Darmstadt, 2021
+* BSc in Mathematics with Computer Science, Technische Universität Darmstadt, 2020
+* BSc Exchange in Mathematics & Computer Science, Hong Kong University of Science and Technology, 2018/2019
 
 Work experience
 ======
