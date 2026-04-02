@@ -1,23 +1,40 @@
 ---
-layout: archive
-# title: "CV"
+layout: landing
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+kicker: ""
+hero_subtitle: "Download and preview the latest CV."
 ---
 
 {% include base_path %}
 
+<div style="margin-bottom: 1rem;">
+  <a href="/files/cv.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:0.5rem 0.75rem;background:#005f99;color:white;border-radius:0.25rem;text-decoration:none;font-weight:600;">Download CV (PDF)</a>
+</div>
+
+<iframe src="/files/cv.pdf" width="100%" height="840" style="border:1px solid #ccc;border-radius:4px;" title="CV Preview">
+  <p>Your browser does not support PDFs. <a href="/files/cv.pdf" target="_blank" rel="noopener">Download the CV here</a>.</p>
+</iframe>
+
+<!-- 
 Education
 ======
-* PhD in Time series forecast of chaotic and turbulent dynamics, Imperial College London, 2025 (expected)
+* PhD, Machine Learning for Dynamical Systems, Imperial College London, Nov 2025
+  * Supervisor: Prof. Luca Magri
+  * Developed physics-informed ML models for real-time forecasting of partially observed chaotic systems.
+  * Combined latent-space models with recurrent neural networks and data assimilation to recover long-term statistics and stability properties.
 * MSc in Computational Mathematics, Technische Universität Darmstadt, 2021
 * BSc in Mathematics with Computer Science, Technische Universität Darmstadt, 2020
 * BSc Exchange in Mathematics & Computer Science, Hong Kong University of Science and Technology, 2018/2019
 
 Work experience
 ======
+* AI Fellow, Faculty.ai & Inigo, Oct 2025 - Dec 2025
+  * Selected for a competitive AI fellowship focused on real-world, interdisciplinary applications.
+  * Developed a retrieval-augmented generation (RAG) pipeline for frequency analysis and risk evaluation in high-risk insurance.
 * Research Scientist Intern, Research & Development Simulia - Dassault Systèmes, Nov 2020 - Nov 2021
 * Software Architecture Intern, Chief Operating Office - Deutsche Bank, Jul 2019 - Sep 2019
 * Teaching Assistant, Department of Mathematics - Technische Universität Darmstadt, 2017 - 2020
@@ -61,7 +78,7 @@ Grants & Awards
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
    -->
-
+<!-- 
    
 Teaching
 ======
@@ -75,4 +92,4 @@ Teaching
 Volunteering
 ======
 * PhD Student Representative - 2022-2024
-* Big Sister Mentoring for women in STEM with migration background - 2020
+* Big Sister Mentoring for women in STEM with migration background - 2020 --> 

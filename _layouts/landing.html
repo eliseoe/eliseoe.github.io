@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% include left-rail.html %}
+
+<div id="main" role="main">
+  <article class="page landing" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="landing__bg" aria-hidden="true"></div>
+
+    <header class="landing__hero">
+      <div class="landing__inner">
+        <p class="landing__kicker">{{ page.kicker | default: "Research" }}</p>
+        <div class="landing__title-row">
+          {% if site.author.avatar %}
+            <img class="landing__avatar" src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.author.name | default: site.title }}">
+          {% endif %}
+          <h1 class="landing__title">{{ page.hero_title | default: site.title }}</h1>
+        </div>
+        <div class="landing__cta">
+          <a class="btn btn--primary" href="{{ base_path }}/">Home</a>
+          <a class="btn btn--inverse" href="{{ base_path }}/cv/">CV</a>
+          <a class="btn btn--inverse" href="{{ base_path }}/publications/">Publications</a>
+          <a class="btn btn--inverse" href="{{ base_path }}/personal/">Personal</a>
+        </div>
+
+        <div class="landing__meta">
+          {% if site.author.location %}<span>{{ site.author.location }}</span>{% endif %}
+        </div>
+      </div>
+    </header>
+
+    <section class="landing__body">
+      <div class="landing__inner landing__content page__content" itemprop="text">
+        {{ content }}
+      </div>
+    </section>
+  </article>
+</div>

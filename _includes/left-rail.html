@@ -1,0 +1,24 @@
+{% include base_path %}
+
+<nav class="left-rail" aria-label="Links">
+  {% if site.author.email %}
+    <a class="left-rail__link" href="mailto:{{ site.author.email }}" aria-label="Email">
+      <i class="fas fa-envelope" aria-hidden="true"></i>
+    </a>
+  {% endif %}
+  {% if site.author.googlescholar %}
+    <a class="left-rail__link" href="{{ site.author.googlescholar }}" aria-label="Google Scholar">
+      <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+    </a>
+  {% endif %}
+  {% if site.author.github %}
+    <a class="left-rail__link" href="https://github.com/{{ site.author.github }}" aria-label="GitHub">
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </a>
+  {% endif %}
+  {% if site.author.linkedin %}
+    <a class="left-rail__link" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" aria-label="LinkedIn">
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
+    </a>
+  {% endif %}
+</nav>

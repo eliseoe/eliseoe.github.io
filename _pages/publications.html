@@ -1,8 +1,10 @@
 ---
-layout: archive
+layout: landing
 title: "Publications"
 permalink: /publications/
 author_profile: true
+kicker: ""
+hero_subtitle: "Selected papers and preprints."
 ---
 
 {% if site.author.googlescholar %}
@@ -11,26 +13,22 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+<ul class="publication-list" style="list-style:none;padding-left:0;margin-top:1rem;">
+  {% for pub in site.publications reversed %}
+    <li style="margin-bottom:1rem;">
+      <a href="{{ pub.paperurl | default: pub.url }}" target="_blank" rel="noopener" style="font-weight:600;color:#0f766e;text-decoration:none;">
+        {{ pub.title }}
+      </a>
+      {% if pub.venue %}
+        <div style="font-size:0.92rem;color:#334155;">{{ pub.venue }}{% if pub.date %}, {{ pub.date | date: "%Y" }}{% endif %}</div>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+      {% if pub.citation %}
+        <div style="margin-top:0.25rem;color:#475569;">{{ pub.citation | markdownify }}</div>
+      {% endif %}
+    </li>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+</ul>
+
 
 
 

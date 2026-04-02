@@ -1,0 +1,270 @@
+/* ==========================================================================
+   Custom overrides
+   Aim: cleaner, more minimal + elegant without changing theme structure
+   ========================================================================== */
+
+/* Typography + rhythm */
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove reserved space for removed masthead */
+body {
+  /* Keep content from hiding behind fixed masthead when needed */
+  margin-top: 0;
+}
+
+.masthead {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  background: rgba(255, 255, 255, 0.94);
+}
+
+/* Slightly calmer headings */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.01em;
+}
+
+.page__content {
+  /* More comfortable reading width */
+  max-width: 72ch;
+}
+
+/* Links: more understated, still clearly interactive */
+.page__content a,
+.archive a {
+  color: #0f766e; /* muted teal */
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.page__content a:hover,
+.archive a:hover {
+  color: #115e59;
+}
+
+/* Masthead: lighter, less “boxy” */
+.masthead {
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+/* Minimal masthead (replaces greedy-nav links) */
+.masthead__minimal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.masthead__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: inherit;
+}
+
+.masthead__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.masthead__brand-text {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.masthead__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.masthead__icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.masthead__icon-link:hover {
+  color: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Reduce heavy shadows/borders for a flatter look */
+pre,
+.highlight,
+p > code,
+a > code,
+li > code,
+figcaption > code,
+td > code,
+.notice,
+.btn,
+.archive__item-teaser {
+  box-shadow: none !important;
+}
+
+/* Buttons: cleaner pill style */
+.btn {
+  border-radius: 999px;
+  border-width: 1px;
+}
+
+/* Avatar: a touch more polished */
+.author__avatar img {
+  border-radius: 999px;
+}
+
+/* Softer separators */
+hr {
+  border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Landing-style homepage (minimal, modern, “one-pager” feel) */
+.landing {
+  position: relative;
+}
+
+.landing__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(900px 420px at 15% 5%, rgba(15, 118, 110, 0.12), transparent 60%),
+    radial-gradient(700px 360px at 85% 10%, rgba(2, 132, 199, 0.10), transparent 55%),
+    radial-gradient(900px 600px at 50% 0%, rgba(0, 0, 0, 0.03), transparent 60%);
+}
+
+.landing__hero,
+.landing__body {
+  position: relative;
+  z-index: 1;
+}
+
+.landing__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2.75rem 1.25rem;
+}
+
+.landing__hero .landing__inner {
+  padding-top: 3.25rem;
+  padding-bottom: 1.75rem;
+}
+
+.landing__kicker {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.landing__title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(2.2rem, 4.2vw, 3.2rem);
+  letter-spacing: -0.03em;
+}
+
+.landing__title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.landing__avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.landing__subtitle {
+  margin: 0 0 1.2rem;
+  max-width: 60ch;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.landing__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.25rem;
+}
+
+.landing__meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.landing__body .landing__inner {
+  padding-top: 1.25rem;
+  padding-bottom: 3.5rem;
+}
+
+.landing__content {
+  max-width: 72ch;
+}
+
+/* Make the theme feel less “academic fork” on the homepage */
+.landing .page__content {
+  font-size: 1.02rem;
+}
+
+/* Left social rail */
+.left-rail {
+  position: fixed;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 50;
+}
+
+@media (max-width: 840px) {
+  .left-rail {
+    display: none;
+  }
+}
+
+.left-rail__link {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.left-rail__link:hover {
+  color: rgba(0, 0, 0, 0.85);
+  border-color: rgba(0, 0, 0, 0.14);
+  background: rgba(255, 255, 255, 0.95);
+}
+
