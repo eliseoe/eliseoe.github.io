@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 6%;
+    --foreground: 210 20% 88%;
+    --border: 214.3 31.8% 91.4%;
+    --phase-bg: 220 25% 6%;
+    --phase-surface: 220 20% 10%;
+    --phase-teal: 170 60% 50%;
+    --phase-ghost: 220 30% 35%;
+    --phase-text: 210 20% 88%;
+    --phase-text-dim: 215 15% 55%;
+    --phase-warm: 35 60% 55%;
+    --phase-teal-dim: 170 40% 30%;
+    --laminar-steel: 210 25% 50%;
+    --laminar-bg: 210 15% 96%;
+    --laminar-line: 210 20% 78%;
+    --laminar-text: 210 30% 15%;
+    --laminar-text-dim: 210 15% 45%;
+    --turbulent-amber: 35 75% 52%;
+    --turbulent-bg: 38 50% 95%;
+    --turbulent-warm: 30 60% 40%;
+    --turbulent-cream: 40 40% 92%;
+  }
+
+  * {
+    box-sizing: border-box;
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
+    min-width: 320px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer utilities {
+  .font-mono-theme {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .font-serif-theme {
+    font-family: "Source Serif 4", serif;
+  }
+
+  .font-sans-theme {
+    font-family: "Inter", sans-serif;
+  }
+}
