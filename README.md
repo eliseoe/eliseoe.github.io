@@ -1,5 +1,7 @@
 # Elise Özalp Website
 
+[![Deploy Site](https://github.com/eliseoe/eliseoe.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/eliseoe/eliseoe.github.io/actions/workflows/deploy.yml)
+
 This repository contains the source for [eliseoe.github.io](https://eliseoe.github.io), built as a Vite + React + Tailwind static site and deployed with GitHub Pages.
 
 ## How It Works
