@@ -28,7 +28,7 @@ const LorenzCanvas = ({ width, height, className }: LorenzCanvasProps) => {
     const sigma = 10;
     const rho = 28;
     const beta = 8 / 3;
-    const dt = 0.003;
+    const dt = 0.005;
     const scale = 6.5;
     const centerX = width / 2;
     const centerY = height / 2 + 30;
@@ -37,7 +37,7 @@ const LorenzCanvas = ({ width, height, className }: LorenzCanvasProps) => {
     let x = 0.1;
     let y = 0;
     let z = 0;
-    for (let index = 0; index < 18000; index += 1) {
+    for (let index = 0; index < 15000; index += 1) {
       const dx = sigma * (y - x) * dt;
       const dy = (x * (rho - z) - y) * dt;
       const dz = (x * y - beta * z) * dt;

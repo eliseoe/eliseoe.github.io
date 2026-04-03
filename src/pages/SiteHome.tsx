@@ -60,7 +60,7 @@ const SiteHome = () => {
             <p className="mb-6 max-w-xl font-mono-theme text-sm leading-relaxed text-phase-text-dim">{profile.subtitle}</p>
             <p className="max-w-xl text-sm leading-relaxed text-phase-text-dim/80 sm:text-base">{profile.intro[0]}</p>
             <div className="mt-8 flex flex-wrap gap-2">
-              {["Applied ML", "Dynamical systems", "Physics-informed models", profile.location].map((tag) => (
+              {["Applied ML", "Dynamical systems", "Chaos", profile.location].map((tag) => (
                 <span
                   key={tag}
                   className="rounded-full border border-phase-teal/30 px-3 py-1.5 font-mono-theme text-[11px] text-phase-teal/80 sm:text-xs"
@@ -265,7 +265,7 @@ const SiteHome = () => {
             <div className="rounded-[1.75rem] border border-phase-ghost/20 bg-phase-surface/35 p-5 sm:p-6">
               <p className="mb-4 font-serif-theme text-3xl text-phase-text">Recipes</p>
               <p className="mb-6 text-sm leading-relaxed text-phase-text-dim/85">
-                Baking is still the main non-research thread here, now with proper recipe pages instead of source-file links.
+                Baking is my personal bifurcation.
               </p>
               <img
                 src="/images/pecanpie.jpeg"
@@ -304,7 +304,7 @@ const SiteHome = () => {
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <div>
             <p className="font-mono-theme text-xs text-phase-text-dim/40">© 2026 {profile.name}</p>
-            <p className="mt-2 text-sm text-phase-text-dim/70">Research, writing, and recipes collected in one place.</p>
+            <p className="mt-2 text-sm text-phase-text-dim/70">Welcome to my chaotic attractor. </p>
           </div>
           <p className="font-mono-theme text-xs text-phase-text-dim/30">sigma = 10, rho = 28, beta = 8/3</p>
         </div>

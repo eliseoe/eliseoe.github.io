@@ -1,11 +1,11 @@
 export const profile = {
   name: "Elise Özalp",
   title: "Machine learning for dynamical systems",
-  subtitle: "Physics-informed ML for forecasting partially observed chaotic systems.",
+  subtitle: "Bridging machine learning and differential equations.",
   intro: [
-    "I am Elise Özalp, an applied ML researcher working on machine learning for dynamical systems.",
-    "I completed my PhD at Imperial College London, where I developed physics-informed ML methods for real-time forecasting of partially observed chaotic systems. My research combines latent-space models, recurrent neural networks, and data assimilation to recover long-term statistics and stability properties.",
-    "Most recently, I was an AI Fellow at Faculty.ai and Inigo, where I built a retrieval-augmented generation pipeline for loss analysis.",
+    "I am an applied machine learning researcher focused on applying AI to physics problems.",
+    "I completed my PhD at Imperial College London, where I developed physics-informed approaches for real-time forecasting of partially observed chaotic systems. My work integrates latent-space models, recurrent neural networks, and data assimilation for forecasting short-term dynamics, long-term statistics and inferring stability properties. I am particularly interested in extreme events, precursor analysis, and forecasting tail distributions.",
+    "Most recently, I was an AI Fellow at Faculty.ai and Inigo, where I built a retrieval-augmented generation pipeline for loss analysis."
   ],
   location: "London, UK",
   email: "eliseoezalp@gmail.com",
